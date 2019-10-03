@@ -48,3 +48,18 @@
 .toolbar-nav-items a:active{
   color: orangered;
 }
+
+@media (max-width: 768px) {
+  .toolbar-nav-items{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar-toggle-button{
+    display: none;
+  }
+  .toolbar-logo{
+    margin-left: 0;
+  }
+}
