@@ -1,0 +1,17 @@
+
+.about-page{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+}
+
+
+.about-me{
+  background: #e6e6e6;
+  color: #313131;
+}
+
+.about-image{
+  height: 80px;
+}

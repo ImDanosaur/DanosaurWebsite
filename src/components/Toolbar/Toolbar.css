@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: green;
+  background: #81a78e;
   height: 56px;
 }
 
@@ -22,6 +22,8 @@
   color: white;
   text-decoration: none;
   font-size: 2rem;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: 'Cinzel', serif;
 }
 
 .spacer{
@@ -31,6 +33,8 @@
 .toolbar-nav-items a{
   color: white;
   text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
 }
 
 .toolbar-nav-items ul{
@@ -44,9 +48,11 @@
   padding: 0 0.5rem;
 }
 
+.toolbar-logo a:hover,
+.toolbar-logo a:active,
 .toolbar-nav-items a:hover,
 .toolbar-nav-items a:active{
-  color: orangered;
+  color: #313131;
 }
 
 @media (max-width: 768px) {

@@ -16,18 +16,21 @@ const Toolbar = props => (
       <div className="toolbar-toggle-button">
         <DrawerToggleButton click={props.drawerClickHandler}/>
       </div>
-      <div className="toolbar-logo"><a href="/">ImDanosaur</a></div>
+      <div className="toolbar-logo"><Link to="/">ImDanosaur</Link></div>
       <div className="spacer" />
       <div className="toolbar-nav-items">
         <ul>
           <li><Link to="/about">About Me</Link></li>
-          <li><a href="/">Projects</a></li>
+          <li><a href="https://github.com/ImDanosaur?tab=repositories">Projects</a></li>
           <li><a href="/">Resume</a></li>
-          <li><a href="/">LinkedIn </a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-sanchez-9810a9b1/">Contact me</a></li>
         </ul>
       </div>
     </nav>
   </header>
+
+
+  <Route path='/home' component={App} />
   <Route path='/about' component={AboutMe} />
   </Router>
 );
