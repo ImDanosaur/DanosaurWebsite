@@ -4,8 +4,6 @@ import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
-
-
 export default class App extends Component {
   state = {
     sideDrawerOpen: false
