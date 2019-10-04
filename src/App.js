@@ -27,13 +27,12 @@ export default class App extends Component {
       backdrop = <Backdrop click={this.backDropClickHandler}/>
     }
 
-
     return (
       <div style={{height: '100%'}}>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
         <main style={{marginTop: '64px'}}>
+          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backdrop}
         </main>
       </div>
     );

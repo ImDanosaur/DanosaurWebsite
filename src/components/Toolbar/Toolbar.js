@@ -6,6 +6,7 @@ import './Toolbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import App from '../../App';
 import AboutMe from '../AboutMe/AboutMe';
+import Backdrop from '../Backdrop/Backdrop';
 
 const Toolbar = props => (
   <Router>
@@ -15,7 +16,7 @@ const Toolbar = props => (
         <DrawerToggleButton click={props.drawerClickHandler}/>
       </div>
       <div className="toolbar-container">
-        <div className="toolbar-logo"><Link to="/">ImDanosaur</Link></div>
+        <div className="toolbar-logo"><Link to="/backdrop">ImDanosaur</Link></div>
         <div className="toolbar-nav-items">
           <ul>
             <li><Link to="/about">About Me</Link></li>
@@ -28,7 +29,7 @@ const Toolbar = props => (
     </nav>
   </header>
 
-  <Route path='/home' component={App} />
+  <Route path='/backdrop' component={Backdrop} />
   <Route path='/about' component={AboutMe} />
   </Router>
 );
