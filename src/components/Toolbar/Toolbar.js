@@ -21,8 +21,9 @@ const Toolbar = props => (
           <ul>
             <li><Link to="/about">About Me</Link></li>
             <li><a href="https://github.com/ImDanosaur?tab=repositories">Projects</a></li>
-            <li><a href="/contact">Resume</a></li>
-            <li><a href="https://www.linkedin.com/in/daniel-sanchez-9810a9b1/">Contact me</a></li>
+            <li><a href="/">Resume</a></li>
+            <li><Link to="/contact">Contact</Link></li>
+            {/* <li><a href="https://www.linkedin.com/in/daniel-sanchez-9810a9b1/">Contact me</a></li> */}
           </ul>
         </div>
       </div>

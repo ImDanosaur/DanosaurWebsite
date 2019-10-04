@@ -3,7 +3,7 @@ import React from 'react';
 import './Contact.css';
 import '../../App.css';
 
-function Contact() {
+function ContactMe() {
   return(
     <div className="app-container">
       <div className="app-content">
@@ -14,4 +14,4 @@ function Contact() {
   );
 };
 
-export default Contact;
+export default ContactMe;
