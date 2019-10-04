@@ -1,17 +1,17 @@
 
-.about-page{
+/* .about-page{
   display: flex;
   justify-content: center;
   align-content: center;
   position: fixed;
   height: 100vh;
-}
+} */
 
-.about-me{
+/* .about-me{
   padding: 30px;
   background: #e6e6e6;
   color: #313131;
-}
+} */
 
 .about-image{
   height: 80px;
