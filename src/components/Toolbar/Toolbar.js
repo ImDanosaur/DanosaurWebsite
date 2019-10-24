@@ -6,6 +6,7 @@ import './Toolbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import App from '../../App';
 import AboutMe from '../AboutMe/AboutMe';
+import Resume from '../Resume/Resume';
 import Contact from '../Modals/Contact';
 
 const Toolbar = props => (
@@ -19,10 +20,18 @@ const Toolbar = props => (
         <div className="toolbar-logo"><Link to="/">ImDanosaur</Link></div>
         <div className="toolbar-nav-items">
           <ul>
-            <li><Link to="/about">About Me</Link></li>
-            <li><a href="https://github.com/ImDanosaur?tab=repositories">Projects</a></li>
-            <li><a href="/">Resume</a></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li>
+              <Link to="/about">About Me</Link>
+            </li>
+            <li>
+              <a href="https://github.com/ImDanosaur?tab=repositories" target="_blank">Projects</a>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
             {/* <li><a href="https://www.linkedin.com/in/daniel-sanchez-9810a9b1/">Contact me</a></li> */}
           </ul>
         </div>
@@ -32,6 +41,7 @@ const Toolbar = props => (
 
   <Route path='/home' component={App} />
   <Route path='/about' component={AboutMe} />
+  <Route path='/resume' component={Resume} />
   <Route path='/contact' component={Contact} />
   </Router>
 );
