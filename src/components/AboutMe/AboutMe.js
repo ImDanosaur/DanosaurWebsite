@@ -1,11 +1,12 @@
 import React from 'react';
 
 import './AboutMe.css';
+import '../../App.css';
 
 function About() {
   return(
-    <div className="about-page">
-      <div className="about-me">
+    <div className="app-container">
+      <div className="app-content">
         <img className="about-image" src="https://i.imgur.com/q3ehgGf.png" alt="Danosaur" />
         <h1>About me</h1>
         <p>Hello! I'm a software developer that is currently attending Flatiron Schools and is 

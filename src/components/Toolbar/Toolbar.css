@@ -55,6 +55,10 @@
   padding: 0 0.5rem;
 }
 
+.toolbar-nav-items li a{
+  height: 100%;
+}
+
 .toolbar-logo a:hover,
 .toolbar-logo a:active,
 .toolbar-nav-items a:hover,
