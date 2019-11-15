@@ -3,10 +3,12 @@ import './App.css';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
+import Landing from './components/Landing/Landing';
 
 export default class App extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    show: false
   };
 
   drawerToggleClickHandler = () => {
@@ -17,6 +19,14 @@ export default class App extends Component {
 
   backDropClickHandler = () => {
     this.setState({sideDrawerOpen: false})
+  };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
   };
 
   render(){
@@ -31,6 +41,7 @@ export default class App extends Component {
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
+          <Landing />
         </main>
       </div>
     );

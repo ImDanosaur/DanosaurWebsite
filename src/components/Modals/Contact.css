@@ -1,0 +1,18 @@
+.contact-images{
+  height: 80px;
+}
+
+#git{
+  margin-left: 1rem;
+  background: black;
+  border-radius: 6px;
+}
+
+.contact-info{
+  color:blue;
+  text-decoration: underline;
+}
+
+.contact-content{
+  display: flex;
+}
